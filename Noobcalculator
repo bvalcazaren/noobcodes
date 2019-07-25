@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+   float num1;
+   float num2;
+   char oper,redo;
+
+cout<<"Welcome to Calculator by Ne"<<endl;
+cout<<"----------------------------";
+cout<<endl<<endl<<endl;
+
+do
+{
+cout<<"Please enter the operation: \n";
+cin>> oper;
+
+switch(oper)
+{
+case '+':
+cout<<"You entered addition "<<endl;
+cout<<"Enter first number"<<endl;
+cin>>num1;'\n';
+cout<<"You entered "<<num1<<endl;
+
+cout<<"Enter second number"<<endl;
+cin>>num2;'\n';
+cout<<"You entered "<<num2<<endl;
+cout<<"Total sum is"<<num1+num2<<endl;
+break;
+
+case '*':
+cout<<"You entered multiplication"<<endl;
+cout<<"Enter first number"<<endl;
+cin>>num1;'\n';
+cout<<"You entered "<<num1<<endl;
+
+cout<<"Enter second number"<<endl;
+cin>>num2;'\n';
+cout<<"You entered "<<num2<<endl;
+cout<<"Total product is"<<num1*num2<<endl;
+break;
+
+case '-':
+cout<<"You entered substraction"<<endl;
+cout<<"Enter first number"<<endl;
+cin>>num1;'\n';
+cout<<"You entered "<<num1<<endl;
+
+cout<<"Enter second number"<<endl;
+cin>>num2;'\n';
+cout<<"You entered "<<num2<<endl;
+cout<<"Total substraction is "<<num1-num2<<endl;
+break;
+
+case '/':
+cout<<"You entered division"<<endl;
+cout<<"Enter first number"<<endl;
+cin>>num1;'\n';
+cout<<"You entered "<<num1<<endl;
+
+cout<<"Enter second number"<<endl;
+cin>>num2;'\n';
+cout<<"You entered "<<num2<<endl;
+cout<<"Total quotient is "<<num1/num2<<endl;
+break;
+
+
+default:
+cout<<"Invalid operation"<<endl;
+}
+
+}
+while (redo=='y'||redo=='Y');
+
+
+return 0;
+
+}
